@@ -52,10 +52,10 @@ public class ArticleController {
 
 	//create new article
 	@PostMapping("/article")  
-	private int saveArticle(@RequestBody Article a)   
+	private int saveArticle(@RequestBody Article ar)   
 	{  
-		as.saveOrUpdate(a);  
-		return a.getId();  
+		as.saveOrUpdate(ar);  
+		return ar.getId();  
 	} 
 
 	//creating put mapping that updates the article detail
